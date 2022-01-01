@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box, body .container .box1, body .container .box2 {
+  height: 200px;
+  width: 200px;
+  background-color: #ff3838;
+  float: left;
+  margin-right: 10px;
+}
+
+body {
+  background-color: #dbdbdb;
+}
+
+body .container {
+  width: 900px;
+  height: 100vh;
+  margin: 0px auto;
+  background-color: #dd9777;
+}
+
+body .container header {
+  width: 900px;
+  background-color: #ff3838;
+}
+
+body .container header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+body .container header ul li {
+  border: 1px solid #363636;
+  margin: 10px;
+  padding: 12px 25px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+body .container header ul li:hover {
+  background: #363636;
+  -webkit-transition: .4s all ease;
+  transition: .4s all ease;
+}
+
+body .container header ul li a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+body .container .boxs {
+  height: 500px;
+  width: 700px;
+  margin: 20px auto;
+  background-color: #7db;
+}
+
+body .container .box1 {
+  border-width: 3px;
+  border-style: solid;
+  border-color: black;
+}
+
+body .container .box2 {
+  border-width: 3px;
+  border-style: dashed;
+  border-color: green;
+}
+/*# sourceMappingURL=main.css.map */
