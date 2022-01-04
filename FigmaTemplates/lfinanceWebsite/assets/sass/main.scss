@@ -1,5 +1,90 @@
-h1 {
-    background: red;
-    color: black;
-    font-size: 2rem;
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navbar-items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 19px;
+    .navbar-item {
+        display: flex;
+        align-items: center;
+        .navbar-menu ul {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-brand h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            /* identical to box height, or 133% */
+            letter-spacing: 0.1px;
+            /* text-color */
+            color: #252B42;
+            margin-right: 83px;
+        }
+        .navbar-menu ul li a {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+            /* identical to box height, or 171% */
+            letter-spacing: 0.2px;
+            /* second-text-color */
+            color: #737373;
+        }
+        .navbar-menu ul li:not(:first-child) {
+            padding-left: 21px;
+        }
+    }
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        .navbar-login p a {
+            /* btn-text */
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 22px;
+            /* identical to box height, or 157% */
+            letter-spacing: 0.2px;
+            /* primary-color */
+            color: #23A6F0;
+            padding-right: 45px;
+        }
+        .navbar-button button {
+            padding: 15px 25px;
+            background: #23A6F0;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            a {
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 22px;
+                /* identical to box height, or 157% */
+                letter-spacing: 0.2px;
+                /* light-text-color */
+                color: #FFFFFF;
+                img {
+                    padding-left: 15px;
+                }
+            }
+        }
+    }
 }
