@@ -1,3 +1,4 @@
+@import "./varibales.scss";
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +10,10 @@
     max-width: 1050px;
     width: 100%;
     margin: 0 auto;
+}
+
+body {
+    font-family: "Montserrat";
 }
 
 .navbar-items {
@@ -23,7 +28,6 @@
             align-items: center;
         }
         .navbar-brand h1 {
-            font-family: 'Montserrat', sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 24px;
@@ -35,7 +39,6 @@
             margin-right: 83px;
         }
         .navbar-menu ul li a {
-            font-family: Montserrat;
             font-style: normal;
             font-weight: 600;
             font-size: 14px;
@@ -54,7 +57,6 @@
         align-items: center;
         .navbar-login p a {
             /* btn-text */
-            font-family: Montserrat;
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
@@ -72,7 +74,6 @@
             border: none;
             cursor: pointer;
             a {
-                font-family: "Montserrat";
                 font-style: normal;
                 font-weight: bold;
                 font-size: 14px;

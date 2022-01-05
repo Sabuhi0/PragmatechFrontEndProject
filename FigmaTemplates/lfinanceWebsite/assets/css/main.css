@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.navbar-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 19px;
+}
+
+.navbar-items .navbar-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-items .navbar-item .navbar-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-items .navbar-item .navbar-brand h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  letter-spacing: 0.1px;
+  /* text-color */
+  color: #252B42;
+  margin-right: 83px;
+}
+
+.navbar-items .navbar-item .navbar-menu ul li a {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  /* identical to box height, or 171% */
+  letter-spacing: 0.2px;
+  /* second-text-color */
+  color: #737373;
+}
+
+.navbar-items .navbar-item .navbar-menu ul li:not(:first-child) {
+  padding-left: 21px;
+}
+
+.navbar-items .navbar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-items .navbar-nav .navbar-login p a {
+  /* btn-text */
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+  letter-spacing: 0.2px;
+  /* primary-color */
+  color: #23A6F0;
+  padding-right: 45px;
+}
+
+.navbar-items .navbar-nav .navbar-button button {
+  padding: 15px 25px;
+  background: #23A6F0;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.navbar-items .navbar-nav .navbar-button button a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+  /* identical to box height, or 157% */
+  letter-spacing: 0.2px;
+  /* light-text-color */
+  color: #FFFFFF;
+}
+
+.navbar-items .navbar-nav .navbar-button button a img {
+  padding-left: 15px;
+}
