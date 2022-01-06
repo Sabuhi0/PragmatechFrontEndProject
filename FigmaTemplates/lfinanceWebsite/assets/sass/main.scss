@@ -16,10 +16,14 @@ body {
     font-family: $font;
 }
 
+.header-main {
+    background: #FAFAFA;
+}
+
 .navbar-items {
     display: flex;
     justify-content: space-between;
-    margin-top: 19px;
+    padding-top: 19px;
     .navbar-item {
         display: flex;
         align-items: center;
