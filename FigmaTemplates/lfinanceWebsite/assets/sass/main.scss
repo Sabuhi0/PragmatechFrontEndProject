@@ -35,7 +35,7 @@ body {
             /* identical to box height, or 133% */
             letter-spacing: 0.1px;
             /* text-color */
-            color: #252B42;
+            color: $Color-Ebony-Clay;
             margin-right: 83px;
         }
         .navbar-menu ul li a {
@@ -46,7 +46,7 @@ body {
             /* identical to box height, or 171% */
             letter-spacing: 0.2px;
             /* second-text-color */
-            color: #737373;
+            color: $Color-Dove-Gray;
         }
         .navbar-menu ul li:not(:first-child) {
             padding-left: 21px;
@@ -64,12 +64,12 @@ body {
             /* identical to box height, or 157% */
             letter-spacing: 0.2px;
             /* primary-color */
-            color: #23A6F0;
+            color: $Color-Picton-Blue;
             padding-right: 45px;
         }
         .navbar-button button {
             padding: 15px 25px;
-            background: #23A6F0;
+            background: $Color-Picton-Blue;
             border-radius: 5px;
             border: none;
             cursor: pointer;
@@ -81,7 +81,7 @@ body {
                 /* identical to box height, or 157% */
                 letter-spacing: 0.2px;
                 /* light-text-color */
-                color: #FFFFFF;
+                color: $Color-White;
                 img {
                     padding-left: 15px;
                 }
@@ -126,7 +126,7 @@ body {
                 /* or 150% */
                 letter-spacing: 0.2px;
                 /* second-text-color */
-                color: #737373;
+                color: $Color-Dove-Gray;
                 margin-top: 35px;
             }
         }
