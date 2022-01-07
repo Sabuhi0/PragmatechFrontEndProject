@@ -96,17 +96,19 @@ body {
 
 .main-section {
     position: relative;
+    z-index: 999;
 }
 
-.blob {
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: calc(50% - 822.45px/2 - 1.84px);
-    // transform: matrix(-0.71, 0.81, -0.61, -0.71, 0, 0);
-    // z-index: -2;
-}
-
+// .blob {
+//     position: absolute;
+//     right: 0;
+//     left: 0;
+//     top: 0;
+//     bottom: 0;
+//     // top: calc(50% - 822.45px/2 - 1.84px);
+//     // transform: matrix(-0.71, 0.81, -0.61, -0.71, 0, 0);
+//     // z-index: -2;
+// }
 .main-items {
     display: flex;
     align-items: center;

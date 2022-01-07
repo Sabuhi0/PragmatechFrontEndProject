@@ -121,13 +121,7 @@ body {
 
 .main-section {
   position: relative;
-}
-
-.blob {
-  position: absolute;
-  right: 0;
-  left: 0;
-  top: calc(50% - 822.45px/2 - 1.84px);
+  z-index: 999;
 }
 
 .main-items {
