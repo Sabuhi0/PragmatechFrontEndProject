@@ -44,6 +44,9 @@
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+}
+
+.row {
   grid-gap: 33.5px;
 }
 
