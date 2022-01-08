@@ -1,4 +1,15 @@
 @import "./varibales.scss";
+.container {
+    max-width: 1050px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+body {
+    font-family: $font;
+}
+
+// Content
 .main-content {
     margin-top: 160px;
     // width: 691px;
@@ -23,15 +34,14 @@
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
-        /* or 143% */
         letter-spacing: 0.2px;
-        /* second-text-color */
         color: $Color-Dove-Gray;
         padding-top: 10px;
         padding-bottom: 80px;
     }
 }
 
+// Grid
 %grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

@@ -1,4 +1,67 @@
-.row {
+.container {
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.main-content {
+  margin-top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+  text-align: center;
+}
+
+.main-content h1 {
+  width: 445px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+.main-content p {
+  width: 410px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #737373;
+  padding-top: 10px;
+  padding-bottom: 80px;
+}
+
+.testimonials {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.testimonials-card .testimonials-content p, .testimonials-card .testimonials-profile .profile-inf h1, .testimonials-card .testimonials-profile .profile-inf span {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.testimonials {
   grid-gap: 32.5px;
 }
 
@@ -10,10 +73,6 @@
 }
 
 .testimonials-card .testimonials-content p {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
   letter-spacing: 0.2px;
   color: #737373;
   margin-top: 21.83px;
@@ -34,17 +93,9 @@
 }
 
 .testimonials-card .testimonials-profile .profile-inf h1 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
   color: #23A6F0;
 }
 
 .testimonials-card .testimonials-profile .profile-inf span {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 24px;
   color: #252B42;
 }

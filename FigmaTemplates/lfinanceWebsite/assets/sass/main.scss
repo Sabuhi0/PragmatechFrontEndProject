@@ -1,21 +1,5 @@
 @import "./varibales.scss";
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
-}
-
-.container {
-    max-width: 1050px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-body {
-    font-family: $font;
-}
-
+@import "./reset.scss";
 .header-main {
     background: #FAFAFA;
 }

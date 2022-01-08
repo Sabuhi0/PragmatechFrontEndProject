@@ -1,5 +1,14 @@
 @import "./varibales.scss";
-.row {
+@import "./common.scss";
+%testimonials-content {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.testimonials {
+    @extend %grid;
     grid-gap: 32.5px;
 }
 
@@ -9,10 +18,7 @@
     border-radius: 5px;
     padding: 30px 35px;
     .testimonials-content p {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 24px;
+        @extend %testimonials-content;
         letter-spacing: 0.2px;
         color: $Color-Dove-Gray;
         margin-top: 21.83px;
@@ -24,17 +30,11 @@
         .profile-inf {
             margin-left: 15px;
             h1 {
-                font-style: normal;
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 24px;
+                @extend %testimonials-content;
                 color: $Color-Picton-Blue;
             }
             span {
-                font-style: normal;
-                font-weight: 600;
-                font-size: 14px;
-                line-height: 24px;
+                @extend %testimonials-content;
                 color: $Color-Ebony-Clay;
             }
         }
