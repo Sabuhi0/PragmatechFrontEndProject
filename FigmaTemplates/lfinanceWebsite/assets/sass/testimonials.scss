@@ -1,5 +1,12 @@
 @import "./varibales.scss";
 @import "./common.scss";
+@media only screen and (max-width: 800px) {
+    .testimonials {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 %testimonials-content {
     font-style: normal;
     font-weight: 600;

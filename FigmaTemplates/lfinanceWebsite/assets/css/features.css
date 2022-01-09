@@ -1,3 +1,13 @@
+.container {
+  max-width: 1050px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
 .main-content {
   margin-top: 160px;
   display: -webkit-box;
@@ -42,6 +52,15 @@
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (max-width: 800px) {
+  .row {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .row {
