@@ -40,9 +40,3 @@ body {
         padding-bottom: 80px;
     }
 }
-
-// Grid
-%grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}

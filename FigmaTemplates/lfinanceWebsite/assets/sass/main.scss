@@ -1,22 +1,20 @@
 @import "./varibales.scss";
-.intro {
-    position: relative;
-}
-
 @media only screen and (min-width: 800px) {
     .main-items {
         display: flex;
         align-items: center;
         margin-top: 126px;
     }
-    .main-section {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 999;
-    }
+    // .main-section {
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     z-index: 999;
+    // }
     .header-main {
+        position: relative;
+        z-index: 999;
         background: $Color-Alabaster;
         height: 847px;
     }
