@@ -95,6 +95,7 @@
 .pricing-items .pricing-card .price-button button {
   width: 246px;
   padding: 15px 40px;
+  margin-bottom: 25px;
   /* primary-color */
   color: #FFFFFF;
   font-weight: bold;
@@ -108,21 +109,20 @@
   cursor: pointer;
 }
 
-.pricing-items .pricing-card .list-item {
-  margin-top: 35px;
+.pricing-items .pricing-card .list-item:not(:first-child) {
+  margin-top: 15px;
 }
 
-.pricing-items .pricing-card .list-item .list {
+.pricing-items .pricing-card .list-item:not(:first-child) .list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15px;
 }
 
-.pricing-items .pricing-card .list-item .list .check {
+.pricing-items .pricing-card .list-item:not(:first-child) .list .check {
   width: 32px;
   height: 32px;
   display: -webkit-box;
@@ -138,15 +138,15 @@
   margin-right: 10px;
 }
 
-.pricing-items .pricing-card .list-item .list .secondary {
+.pricing-items .pricing-card .list-item:not(:first-child) .list .secondary {
   background: #2DC071;
 }
 
-.pricing-items .pricing-card .list-item .list .mute {
+.pricing-items .pricing-card .list-item:not(:first-child) .list .mute {
   background: #BDBDBD;
 }
 
-.pricing-items .pricing-card .list-item .list .list-text p {
+.pricing-items .pricing-card .list-item:not(:first-child) .list .list-text p {
   width: 207px;
   font-weight: 600;
   font-size: 14px;
