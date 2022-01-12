@@ -66,6 +66,7 @@
             button {
                 width: 246px;
                 padding: 15px 40px;
+                margin-bottom: 25px;
                 /* primary-color */
                 color: $Color-White;
                 font-weight: bold;
@@ -79,12 +80,11 @@
                 cursor: pointer;
             }
         }
-        .list-item {
-            margin-top: 35px;
+        .list-item:not(:first-child) {
+            margin-top: 15px;
             .list {
                 display: flex;
                 align-items: center;
-                margin-top: 15px;
                 .check {
                     width: 32px;
                     height: 32px;
@@ -126,7 +126,7 @@
         justify-content: center;
         width: 90px;
         height: 90px;
-        background: #E77C40;
+        background: $Color-Burnt-Sienna;
         border-radius: 52px;
         h1 {
             font-weight: bold;
