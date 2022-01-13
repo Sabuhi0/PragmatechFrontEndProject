@@ -1,22 +1,21 @@
 @media only screen and (min-width: 800px) {
   .main-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     margin-top: 126px;
   }
+
   .header-main {
     position: relative;
     z-index: 999;
     background: #FAFAFA;
     height: 847px;
   }
+
   .navbar-icons {
     display: none;
   }
+
   .navbar-menu ul li a {
     font-style: normal;
     font-weight: 600;
@@ -28,45 +27,33 @@
     color: #737373;
     cursor: pointer;
   }
+
   .navbar-menu ul li:not(:first-child) {
     padding-left: 21px;
   }
 }
-
 @media only screen and (max-width: 800px) {
   .main-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 126px;
   }
+
   .navbar-items {
     padding-bottom: 19px;
   }
   .navbar-items .navbar-login,
-  .navbar-items .navbar-button {
+.navbar-items .navbar-button {
     display: none;
   }
   .navbar-items .navbar-brand {
     padding-left: 35px;
   }
   .navbar-items .navbar-icons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .navbar-items .navbar-icons .shopping {
     padding-left: 24px;
@@ -75,6 +62,7 @@
   .navbar-items .navbar-icons .menubar {
     padding-right: 38.57px;
   }
+
   .navbar-menu ul li a {
     font-style: normal;
     font-weight: 500;
@@ -85,59 +73,42 @@
     letter-spacing: 0.2px;
     color: #737373;
   }
+
   .navbar-menu ul {
     position: absolute;
     left: -100%;
     right: 0px;
     top: 0%;
     padding-top: 96px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     width: 100%;
     text-align: center;
-    -webkit-transition: 0.6s ease all;
     transition: 0.6s ease all;
     z-index: 999;
   }
+
   .navbar-menu ul.active {
     left: 0;
   }
-  /* .navbar-menu ul li:not(:first-child) {
-        padding-left: 0px;
-        padding-top: 30px;
-    }*/
-}
 
+  /* .navbar-menu ul li:not(:first-child) {
+      padding-left: 0px;
+      padding-top: 30px;
+  }*/
+}
 .navbar-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding-top: 19px;
 }
-
 .navbar-items .navbar-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .navbar-items .navbar-item .navbar-menu ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .navbar-items .navbar-item .navbar-brand h1 {
   font-style: normal;
   font-weight: bold;
@@ -149,16 +120,10 @@
   color: #252B42;
   margin-right: 83px;
 }
-
 .navbar-items .navbar-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .navbar-items .navbar-nav .navbar-login p a {
   /* btn-text */
   font-style: normal;
@@ -171,7 +136,6 @@
   color: #23A6F0;
   padding-right: 45px;
 }
-
 .navbar-items .navbar-nav .navbar-button button {
   padding: 15px 25px;
   background: #23A6F0;
@@ -179,7 +143,6 @@
   border: none;
   cursor: pointer;
 }
-
 .navbar-items .navbar-nav .navbar-button button a {
   font-style: normal;
   font-weight: bold;
@@ -190,7 +153,6 @@
   /* light-text-color */
   color: #FFFFFF;
 }
-
 .navbar-items .navbar-nav .navbar-button button a img {
   padding-left: 15px;
 }
@@ -209,22 +171,12 @@
     margin-top: 35px;
   }
 }
-
 @media only screen and (max-width: 800px) {
   .main-items {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     margin-top: 126px;
   }
   .main-items .main-item .main-text h1 {
@@ -243,28 +195,16 @@
     margin-top: 35px;
   }
   .main-items .main-buttons {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
   }
 }
-
 .main-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 126px;
 }
-
 .main-items .main-item {
   position: static;
   width: 509px;
@@ -272,7 +212,6 @@
   left: calc(50% - 509px/2 - 270px);
   top: 120.5px;
 }
-
 .main-items .main-item .main-text h1 {
   font-style: normal;
   font-weight: 800;
@@ -281,41 +220,30 @@
   /* or 138% */
   letter-spacing: 0.2px;
 }
-
 .main-items .main-image {
   position: relative;
 }
-
 .main-items .main-image .circleDark {
   position: absolute;
   top: calc(50% - 497.61px/2 - 4.55px);
   left: 0;
   right: 0;
   z-index: -1;
-  -webkit-transform: matrix(0.98, 0.22, -0.21, 0.98, 0, 0);
-          transform: matrix(0.98, 0.22, -0.21, 0.98, 0, 0);
+  transform: matrix(0.98, 0.22, -0.21, 0.98, 0, 0);
 }
-
 .main-items .main-image .circleLight {
   position: absolute;
   top: calc(50% - 520.66px/2 - 22.17px);
   left: 0;
   right: 0;
   z-index: -1;
-  -webkit-transform: matrix(0.43, 0.89, -0.93, 0.4, 0, 0);
-          transform: matrix(0.43, 0.89, -0.93, 0.4, 0, 0);
+  transform: matrix(0.43, 0.89, -0.93, 0.4, 0, 0);
 }
-
 .main-items .main-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 35px;
 }
-
 .main-items .main-buttons .btn-primary {
   padding: 15px 36px;
   background: #23A6F0;
@@ -324,7 +252,6 @@
   margin-right: 10px;
   cursor: pointer;
 }
-
 .main-items .main-buttons .btn-primary a {
   font-style: normal;
   font-weight: bold;
@@ -333,7 +260,6 @@
   letter-spacing: 0.2px;
   color: #FFFFFF;
 }
-
 .main-items .main-buttons .btn-outline {
   padding: 15px 36px;
   background: none;
@@ -341,7 +267,6 @@
   border-radius: 37px;
   cursor: pointer;
 }
-
 .main-items .main-buttons .btn-outline a {
   font-style: normal;
   font-weight: bold;

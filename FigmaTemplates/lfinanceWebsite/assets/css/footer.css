@@ -1,19 +1,11 @@
 .d-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .socials {
@@ -30,7 +22,6 @@
   /* text-color */
   color: #252B42;
 }
-
 .content p {
   width: 213px;
   margin-top: 25px;
@@ -46,7 +37,6 @@
 .footer-card ul li:first-child {
   margin-top: 20px;
 }
-
 .footer-card ul li {
   font-weight: 500;
   font-size: 14px;
@@ -64,7 +54,6 @@
   text-align: center;
   margin-top: 105px;
 }
-
 .footer_content h1 {
   font-weight: 600;
   font-size: 14px;
