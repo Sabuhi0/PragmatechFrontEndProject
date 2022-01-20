@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- Scss -->
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <!-- Output Css -->
+    <!-- Tailwind Output Css -->
     <link href="/dist/output.css" rel="stylesheet">
 </head>
 
@@ -14,20 +16,36 @@
     <!-- Header Section Start -->
     <header id="header">
         <div class="header-items">
-            <div class="container flex items-center">
-                <div class="header-logo">
-                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAAASCAMAAACw93oVAAAAM1BMVEUAAAD///8oLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEhrMZpoAAAAEHRSTlMAABEiM0RVZneImaq7zN3uf6QJ9gAAAhVJREFUSMeFlUGC4yAMBDsGYsAE6v+v3QNCJrvjWU5xsFXqRhIaBNmKfNZPFYqU8TUkjfXQsiQpwf2xjgFpPZxA1LZyBeg5vl5q5BtzR+gkKdOLrSxpcJVSCkBbyHoHZUP2ry29PVta1HlL6zg+0SXlTbakwdsidIohPcnAhkzsWzrZVpDc2cRwRKH8gtRJX4GXlrojG3DnHwFqkBQr10u61lYh94XvxN+QAY6lJd4iFzICHxjHnYDj40u3s51QyZuvz8jIcPvaLXIhK/TDORG2OK+X3NlEU7K9Mt9+RBYuR5JcpCEDkFWZeStvIg1p0gqnZM5OX5+QR6UHQ44ps0J3ZAEOJeCUpAs8V0O+pzd9HEveErv1Zd77kiusupytEYBzIY8xi+pjpre1Mb/tWs4mmsPM170v492Xn70v0wVNFVpYkVeDrhx+QlayVKcLneD2Pp7l0Sw/SEtgcGS3allq3dgN+aZJfRglu6/P5aNBNKTValXYxH01/l4+XlOdkLh8zi5ff0E28kIGC72Qny9kmU3S/0ZWcl3hPgQfCM/I60YqzxlkyPRFZBxfo8CRiWa+Splm3f0bsq/oSToGIziybcM1TVYEuKI1TPeBXrfxnP+HbD5j/e4wZAA7omkZ/e/j7X5tvbfXgiN/urwqMOIDsn79d9o4SP0fZPLzlbL7+nhF93LoZ2TYSsX6ZD6eZc6QnF5/AMoDM/cBQX3IAAAAAElFTkSuQmCC" alt="">
+            <div class="container flex items-center justify-between relative">
+                <div class="flex items-center">
+                    <div class="header-logo">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAAASCAMAAACw93oVAAAAM1BMVEUAAAD///8oLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEgoLEhrMZpoAAAAEHRSTlMAABEiM0RVZneImaq7zN3uf6QJ9gAAAhVJREFUSMeFlUGC4yAMBDsGYsAE6v+v3QNCJrvjWU5xsFXqRhIaBNmKfNZPFYqU8TUkjfXQsiQpwf2xjgFpPZxA1LZyBeg5vl5q5BtzR+gkKdOLrSxpcJVSCkBbyHoHZUP2ry29PVta1HlL6zg+0SXlTbakwdsidIohPcnAhkzsWzrZVpDc2cRwRKH8gtRJX4GXlrojG3DnHwFqkBQr10u61lYh94XvxN+QAY6lJd4iFzICHxjHnYDj40u3s51QyZuvz8jIcPvaLXIhK/TDORG2OK+X3NlEU7K9Mt9+RBYuR5JcpCEDkFWZeStvIg1p0gqnZM5OX5+QR6UHQ44ps0J3ZAEOJeCUpAs8V0O+pzd9HEveErv1Zd77kiusupytEYBzIY8xi+pjpre1Mb/tWs4mmsPM170v492Xn70v0wVNFVpYkVeDrhx+QlayVKcLneD2Pp7l0Sw/SEtgcGS3allq3dgN+aZJfRglu6/P5aNBNKTValXYxH01/l4+XlOdkLh8zi5ff0E28kIGC72Qny9kmU3S/0ZWcl3hPgQfCM/I60YqzxlkyPRFZBxfo8CRiWa+Splm3f0bsq/oSToGIziybcM1TVYEuKI1TPeBXrfxnP+HbD5j/e4wZAA7omkZ/e/j7X5tvbfXgiN/urwqMOIDsn79d9o4SP0fZPLzlbL7+nhF93LoZ2TYSsX6ZD6eZc6QnF5/AMoDM/cBQX3IAAAAAElFTkSuQmCC" alt="">
+                    </div>
+                    <nav>
+                        <ul class="flex">
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Popular</a></li>
+                            <li class="border-b-4 border-b-green-600 hover:text-green-600 transition-all"><a href="#">Web Design</a></li>
+                            <li class="border-b-4 border-b-orange-600 hover:text-orange-600 transition-all"><a href="#">JavaScript</a></li>
+                            <li class="border-b-4 border-b-blue-600 hover:text-blue-600 transition-all"><a href="#">Css</a></li>
+                            <li class="border-b-4 border-b-purple-600 hover:text-purple-600 transition-all"><a href="#">Jquery</a></li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav>
-                    <ul class="flex">
-                        <li><a href="#">News</a></li>
-                        <li><a href="#">Popular</a></li>
-                        <li class="border-b-4 border-b-green-600 hover:text-green-600 transition-all"><a href="#">Web Design</a></li>
-                        <li class="border-b-4 border-b-orange-600 hover:text-orange-600 transition-all"><a href="#">JavaScript</a></li>
-                        <li class="border-b-4 border-b-blue-600 hover:text-blue-600 transition-all"><a href="#">Css</a></li>
-                        <li class="border-b-4 border-b-purple-600 hover:text-purple-600 transition-all"><a href="#">Jquery</a></li>
-                    </ul>
-                </nav>
+                <div class="header-btns">
+                    <button class="aside-btn pr-7">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <button class="search-btn">
+                        <i class="fa fa-search  "></i>
+                    </button>
+                    <div class="header-search-form">
+                        <input class="search-input" type="text" name="search" placeholder="Enter Your Search ...">
+                        <button class="search-close">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>

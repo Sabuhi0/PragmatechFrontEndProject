@@ -502,12 +502,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
+.relative {
+  position: relative;
+}
+
 .flex {
   display: flex;
 }
 
 .items-center {
   align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .border-b-4 {
@@ -532,6 +544,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-b-purple-600 {
   --tw-border-opacity: 1;
   border-bottom-color: rgb(147 51 234 / var(--tw-border-opacity));
+}
+
+.pr-6 {
+  padding-right: 1.5rem;
+}
+
+.pr-7 {
+  padding-right: 1.75rem;
 }
 
 .transition-all {
