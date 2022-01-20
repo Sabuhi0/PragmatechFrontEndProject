@@ -518,10 +518,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .border-b-4 {
   border-bottom-width: 4px;
 }
@@ -546,18 +542,67 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-color: rgb(147 51 234 / var(--tw-border-opacity));
 }
 
-.pr-6 {
-  padding-right: 1.5rem;
+.border-b-\[\#4bb92f\] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(75 185 47 / var(--tw-border-opacity));
+}
+
+.border-b-\[\#ff8700\] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(255 135 0 / var(--tw-border-opacity));
+}
+
+.border-b-\[\#0078ff\] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(0 120 255 / var(--tw-border-opacity));
+}
+
+.border-b-\[\#8d00ff\] {
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(141 0 255 / var(--tw-border-opacity));
+}
+
+.bg-\[\#212631\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(33 38 49 / var(--tw-bg-opacity));
 }
 
 .pr-7 {
   padding-right: 1.75rem;
 }
 
+.pr-8 {
+  padding-right: 2rem;
+}
+
+.pr-10 {
+  padding-right: 2.5rem;
+}
+
+.text-\[\#50d71e\] {
+  --tw-text-opacity: 1;
+  color: rgb(80 215 30 / var(--tw-text-opacity));
+}
+
+.text-\[\#212631\] {
+  --tw-text-opacity: 1;
+  color: rgb(33 38 49 / var(--tw-text-opacity));
+}
+
+.text-\[\#115cff\] {
+  --tw-text-opacity: 1;
+  color: rgb(17 92 255 / var(--tw-text-opacity));
+}
+
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.hover\:bg-green-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
 .hover\:text-green-600:hover {
@@ -578,4 +623,39 @@ Ensure the default browser behavior of the `hidden` attribute.
 .hover\:text-purple-600:hover {
   --tw-text-opacity: 1;
   color: rgb(147 51 234 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#4bb92f\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(75 185 47 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#ff8700\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 135 0 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#0078ff\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 120 255 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#8d00ff\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(141 0 255 / var(--tw-text-opacity));
+}
+
+.hover\:active\:text-orange-600:active:hover {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.peer:hover ~ .peer-hover\:text-orange-600 {
+  --tw-text-opacity: 1;
+  color: rgb(234 88 12 / var(--tw-text-opacity));
 }

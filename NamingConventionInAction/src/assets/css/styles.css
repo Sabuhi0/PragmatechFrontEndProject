@@ -42,6 +42,8 @@ nav ul li:last-child {
   bottom: 0;
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: .4s ease all;
+  transition: .4s ease all;
 }
 
 .header-search-form .search-input {
@@ -55,11 +57,55 @@ nav ul li:last-child {
   top: 50%;
   right: 15px;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   border: none;
   background: transparent;
   line-height: 20px;
   color: #212631;
   font-size: 22px;
+  padding: 0;
+}
+
+.header-btns .header-search-form.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.aside-items {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #fff;
+  max-width: 360px;
+  width: 100%;
+  padding: 80px 20px;
+  overflow-y: scroll;
+  z-index: 999;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+.aside-items.active {
+  z-index: 999;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+
+.nav-aside-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+  background-color: transparent;
+  color: #212631;
+  border: none;
+  font-size: 22px;
+  border-radius: 50%;
   padding: 0;
 }
