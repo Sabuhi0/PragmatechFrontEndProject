@@ -1,0 +1,36 @@
+@import "./mixins.scss";
+.intro-post-item {
+    .filter {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: -webkit-gradient(linear,left bottom,left top,from(rgba(33,38,49,.3)),to(transparent));
+        background: linear-gradient(to top,rgba(33,38,49,.3) 0%,transparent 100%);
+    }
+    .post-thumb {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 20px 15px;
+        .post-meta {
+            margin-bottom: 15px;
+            a {
+                @include postButton;
+            }
+            span {
+                @include postDate;
+                color: #eceef2;
+            }
+        }
+        .post-title {
+            width: 525px;
+            @include postTitle;
+            color: #fff;
+            line-height: 1;
+        }
+    }
+}

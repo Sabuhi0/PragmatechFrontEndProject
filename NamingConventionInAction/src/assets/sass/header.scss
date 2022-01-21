@@ -133,3 +133,11 @@ nav{
     margin-right: 5px;
     cursor: pointer;
 }
+
+@media screen and (max-width: 853px) {
+    .header-items {
+        nav {
+            display: none;
+        }
+    }
+}
