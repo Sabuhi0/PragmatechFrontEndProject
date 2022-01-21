@@ -27,3 +27,18 @@ document.querySelector(".nav-aside-close").addEventListener("click", function() 
     headerSearchForm.classList.remove("active")
 });
 
+//* === Shadow === */
+
+// Add
+document.querySelector(".aside-btn").addEventListener("click", function() {
+    const headerSearchForm = document.querySelector("#nav-aside");
+    headerSearchForm.classList.add("active")
+});
+
+// Remove
+document.querySelector(".nav-aside-close").addEventListener("click", function() {
+    const headerSearchForm = document.querySelector("#nav-aside");
+    headerSearchForm.classList.remove("active")
+});
+
+

@@ -506,8 +506,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   position: relative;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
 .flex {
   display: flex;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .items-center {
@@ -518,28 +538,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
+.gap-2 {
+  gap: 0.5rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
 .border-b-4 {
   border-bottom-width: 4px;
-}
-
-.border-b-green-600 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(22 163 74 / var(--tw-border-opacity));
-}
-
-.border-b-orange-600 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(234 88 12 / var(--tw-border-opacity));
-}
-
-.border-b-blue-600 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(37 99 235 / var(--tw-border-opacity));
-}
-
-.border-b-purple-600 {
-  --tw-border-opacity: 1;
-  border-bottom-color: rgb(147 51 234 / var(--tw-border-opacity));
 }
 
 .border-b-\[\#4bb92f\] {
@@ -562,26 +570,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-bottom-color: rgb(141 0 255 / var(--tw-border-opacity));
 }
 
-.bg-\[\#212631\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(33 38 49 / var(--tw-bg-opacity));
-}
-
-.pr-7 {
-  padding-right: 1.75rem;
-}
-
-.pr-8 {
-  padding-right: 2rem;
-}
-
 .pr-10 {
   padding-right: 2.5rem;
 }
 
-.text-\[\#50d71e\] {
-  --tw-text-opacity: 1;
-  color: rgb(80 215 30 / var(--tw-text-opacity));
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.leading-3 {
+  line-height: .75rem;
+}
+
+.leading-none {
+  line-height: 1;
 }
 
 .text-\[\#212631\] {
@@ -589,40 +601,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(33 38 49 / var(--tw-text-opacity));
 }
 
-.text-\[\#115cff\] {
-  --tw-text-opacity: 1;
-  color: rgb(17 92 255 / var(--tw-text-opacity));
-}
-
 .transition-all {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
-}
-
-.hover\:bg-green-600:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 163 74 / var(--tw-bg-opacity));
-}
-
-.hover\:text-green-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
-}
-
-.hover\:text-orange-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
-}
-
-.hover\:text-blue-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(37 99 235 / var(--tw-text-opacity));
-}
-
-.hover\:text-purple-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(147 51 234 / var(--tw-text-opacity));
 }
 
 .hover\:text-\[\#4bb92f\]:hover {
@@ -645,17 +627,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(141 0 255 / var(--tw-text-opacity));
 }
 
-.hover\:active\:text-orange-600:active:hover {
-  --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
+.hover\:underline:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
-.group:hover .group-hover\:text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.hover\:accent-pink-500:hover {
+  accent-color: #ec4899;
 }
 
-.peer:hover ~ .peer-hover\:text-orange-600 {
-  --tw-text-opacity: 1;
-  color: rgb(234 88 12 / var(--tw-text-opacity));
+.hover\:opacity-90:hover {
+  opacity: 0.9;
 }
