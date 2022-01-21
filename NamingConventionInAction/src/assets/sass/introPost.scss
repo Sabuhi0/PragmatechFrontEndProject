@@ -1,7 +1,6 @@
 @import "./mixins.scss";
 .intro-post-item {
     .filter {
-        content: '';
         position: absolute;
         left: 0;
         right: 0;
@@ -9,6 +8,11 @@
         top: 0;
         background: -webkit-gradient(linear,left bottom,left top,from(rgba(33,38,49,.3)),to(transparent));
         background: linear-gradient(to top,rgba(33,38,49,.3) 0%,transparent 100%);
+        cursor: pointer;
+        opacity: 1;
+    }
+    .filter:hover {
+        opacity: .9;
     }
     .post-thumb {
         position: absolute;
