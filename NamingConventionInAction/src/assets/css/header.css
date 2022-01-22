@@ -66,7 +66,6 @@ nav ul li:last-child {
   right: 0;
   bottom: 0;
   top: 0;
-  background-color: rgba(33, 38, 49, 0.5);
   z-index: 99;
   opacity: 0;
   visibility: hidden;

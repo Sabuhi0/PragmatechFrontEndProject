@@ -1,0 +1,37 @@
+@import "./mixins.scss";
+.section-title {
+    @include sectionTitle;
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+.recent-post-items {
+    .filter {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        transition: .2s ease all;
+        cursor: pointer;
+    }
+    .filter:hover {
+        transition: .2s ease all;
+        background-color: rgba(53, 53, 53, 0.137);
+    }
+    .post-meta {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        a {
+            @include postButton;
+        }
+        span {
+            @include postDate;
+            color: #212631;
+        }
+    }
+    .post-title {
+        @include RecentPostsTitle;
+        color: #212631;
+        line-height: 1;
+    }
+}

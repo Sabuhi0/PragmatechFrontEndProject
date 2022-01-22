@@ -10,9 +10,11 @@
         background: linear-gradient(to top,rgba(33,38,49,.3) 0%,transparent 100%);
         cursor: pointer;
         opacity: 1;
+        transition: .2s ease all;
     }
     .filter:hover {
-        opacity: .9;
+        transition: .2s ease all;
+        background-color: rgba(53, 53, 53, 0.137);
     }
     .post-thumb {
         position: absolute;

@@ -8,10 +8,14 @@
   background: linear-gradient(to top, rgba(33, 38, 49, 0.3) 0%, transparent 100%);
   cursor: pointer;
   opacity: 1;
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
 }
 
 .intro-post-item .filter:hover {
-  opacity: .9;
+  -webkit-transition: .2s ease all;
+  transition: .2s ease all;
+  background-color: rgba(53, 53, 53, 0.137);
 }
 
 .intro-post-item .post-thumb {
