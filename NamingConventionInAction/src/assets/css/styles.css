@@ -291,3 +291,9 @@ nav ul li:last-child {
   transition: .2s ease all;
   background-color: rgba(53, 53, 53, 0.137);
 }
+
+.post-grey {
+  background-color: #fbfbfd;
+  border-bottom: 1px solid #eceef2;
+  border-top: 1px solid #eceef2;
+}
