@@ -18,20 +18,4 @@
         transition: .2s ease all;
         background-color: rgba(53, 53, 53, 0.137);
     }
-    .post-meta {
-        margin-top: 15px;
-        margin-bottom: 15px;
-        a {
-            @include postButton;
-        }
-        span {
-            @include postDate;
-            color: #212631;
-        }
-    }
-    .post-title {
-        @include RecentPostsTitle;
-        color: #212631;
-        line-height: 1;
-    }
 }

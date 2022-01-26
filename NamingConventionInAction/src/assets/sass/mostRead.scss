@@ -1,0 +1,7 @@
+@import "./mixins.scss";
+.post-content {
+    margin-left: 30px;
+    .post-meta {
+        margin-top: 0px !important;
+    }
+}
