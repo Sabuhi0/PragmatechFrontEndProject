@@ -1,0 +1,32 @@
+@import "./mixins.scss";
+
+.footer-widget {
+    .footer-nav {
+        ul {
+            display: flex;
+            li:not(:first-child) {
+                margin-left: 15px;
+            }
+            li {
+                a {
+                    color: #a7b3c6;
+                    transition: .2s color;
+                }
+                a:hover {
+                    transition: .2s color;
+                    color: #212631;
+                }
+            }
+        }
+    }
+    .footer-copyright {
+        color: #a7b3c6;
+        font-size: 13px;
+        span {
+            a:hover {
+                transition: .2s color;
+                color: #212631;
+            }
+        }
+    }
+}

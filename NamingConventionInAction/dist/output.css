@@ -522,12 +522,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
+.mt-20 {
+  margin-top: 5rem;
 }
 
-.inline-block {
-  display: inline-block;
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.mr-10 {
+  margin-right: 2.5rem;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .flex {
@@ -566,10 +582,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .items-center {
   align-items: center;
 }
@@ -600,6 +612,15 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-b-4 {
   border-bottom-width: 4px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
+.border-\[\#f4f4f9\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(244 244 249 / var(--tw-border-opacity));
 }
 
 .border-b-\[\#4bb92f\] {
@@ -642,24 +663,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 120 255 / var(--tw-bg-opacity));
 }
 
-.p-1 {
-  padding: 0.25rem;
-}
-
-.p-0\.5 {
-  padding: 0.125rem;
-}
-
-.p-0 {
-  padding: 0px;
-}
-
 .pr-10 {
   padding-right: 2.5rem;
-}
-
-.pb-1 {
-  padding-bottom: 0.25rem;
 }
 
 .text-center {
@@ -691,11 +696,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-\[\#212631\] {
   --tw-text-opacity: 1;
   color: rgb(33 38 49 / var(--tw-text-opacity));
-}
-
-.text-\[\#fff\] {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .filter {

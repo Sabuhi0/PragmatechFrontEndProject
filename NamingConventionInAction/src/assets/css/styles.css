@@ -354,3 +354,36 @@ nav ul li:last-child {
   -webkit-transition: .2s opacity;
   transition: .2s opacity;
 }
+
+.footer-widget .footer-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer-widget .footer-nav ul li:not(:first-child) {
+  margin-left: 15px;
+}
+
+.footer-widget .footer-nav ul li a {
+  color: #a7b3c6;
+  -webkit-transition: .2s color;
+  transition: .2s color;
+}
+
+.footer-widget .footer-nav ul li a:hover {
+  -webkit-transition: .2s color;
+  transition: .2s color;
+  color: #212631;
+}
+
+.footer-widget .footer-copyright {
+  color: #a7b3c6;
+  font-size: 13px;
+}
+
+.footer-widget .footer-copyright span a:hover {
+  -webkit-transition: .2s color;
+  transition: .2s color;
+  color: #212631;
+}
