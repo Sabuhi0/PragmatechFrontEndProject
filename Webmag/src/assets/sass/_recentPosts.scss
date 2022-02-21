@@ -1,9 +1,10 @@
-@import "./mixins.scss";
+@import "./mixins";
 .section-title {
     @include sectionTitle;
     margin-top: 26px;
     margin-bottom: 26px;
 }
+
 .recent-post-items {
     .filter {
         position: absolute;

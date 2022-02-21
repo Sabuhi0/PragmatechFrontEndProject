@@ -1,4 +1,4 @@
-@import "./mixins.scss";
+@import "./mixins";
 .intro-post-item {
     .filter {
         position: absolute;
@@ -6,8 +6,8 @@
         right: 0;
         bottom: 0;
         top: 0;
-        background: -webkit-gradient(linear,left bottom,left top,from(rgba(33,38,49,.3)),to(transparent));
-        background: linear-gradient(to top,rgba(33,38,49,.3) 0%,transparent 100%);
+        background: -webkit-gradient(linear, left bottom, left top, from(rgba(33, 38, 49, .3)), to(transparent));
+        background: linear-gradient(to top, rgba(33, 38, 49, .3) 0%, transparent 100%);
         cursor: pointer;
         opacity: 1;
         transition: .2s ease all;

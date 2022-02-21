@@ -1,4 +1,4 @@
-@import "./mixins.scss";
+@import "./mixins";
 .most-read-left-items {
     max-width: 780px;
     .most-read-button {
@@ -15,6 +15,7 @@
         }
     }
 }
+
 .post-content {
     margin-left: 30px;
     .post-meta {
@@ -23,7 +24,6 @@
 }
 
 // Aside
-
 @media (max-width: 768px) {
     .aside-most-read-items {
         width: 100% !important;

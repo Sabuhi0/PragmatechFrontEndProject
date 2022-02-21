@@ -1,5 +1,4 @@
-@import "./mixins.scss";
-
+@import "./mixins";
 .footer-widget {
     .footer-nav {
         ul {
@@ -78,20 +77,20 @@
         }
     }
     .footer-socials {
-       ul {
-           li {
-               a {
-                display: block;
-                width: 30px;
-                height: 30px;
-                line-height: 30px;
-                text-align: center;
-                background-color: #a7b3c6;
-                color: #fff;
-                border-radius: 2px;
-                transition: .2s opacity;
-               }
-           }
-       }
+        ul {
+            li {
+                a {
+                    display: block;
+                    width: 30px;
+                    height: 30px;
+                    line-height: 30px;
+                    text-align: center;
+                    background-color: #a7b3c6;
+                    color: #fff;
+                    border-radius: 2px;
+                    transition: .2s opacity;
+                }
+            }
+        }
     }
 }
