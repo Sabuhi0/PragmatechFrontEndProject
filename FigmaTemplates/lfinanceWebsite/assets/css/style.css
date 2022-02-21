@@ -1024,7 +1024,8 @@ body {
   .contact-content {
     margin-bottom: 30px;
   }
-  .contact-content h1, .contact-content p {
+  .contact-content h1,
+  .contact-content p {
     text-align: center;
   }
 }

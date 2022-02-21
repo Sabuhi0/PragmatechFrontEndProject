@@ -1,15 +1,17 @@
-@import "./varibales.scss";
+@import "./varibales";
 @media only screen and (max-width: 800px) {
     .contact-items {
         flex-direction: column;
     }
     .contact-content {
         margin-bottom: 30px;
-        h1,p {
+        h1,
+        p {
             text-align: center;
         }
     }
 }
+
 .contact {
     display: flex;
     align-items: center;
