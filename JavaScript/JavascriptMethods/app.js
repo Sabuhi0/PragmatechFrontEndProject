@@ -58,6 +58,24 @@ const person = persons.find(person => {
 console.log(person);
 
 
+// Reduce metodu
+
+const orders = [
+    { amount: 250 },
+    { amount: 400 },
+    { amount: 550 },
+    { amount: 620 },
+]
+
+let shipping = 50;
+const totalAmout = orders.reduce((sum, order) => sum + order.amount, shipping);
+console.log(totalAmout) // 1870
+
+
+const array = ["Hello", "World"];
+const res = array.reduce((accumulator, currentValue, currentIndex, sourceArray) => accumulator + currentValue)
+console.log(res) // HelloWorld
+
 // ForEach metodu
 
 const humans = [
@@ -91,5 +109,46 @@ const trueSome = num.some(element => {
     return element % 3 === 0;
 })
 
-console.log(falseSome);
-console.log(trueSome);
+console.log(falseSome); // false
+console.log(trueSome); // true
+
+
+// Every metodu
+
+const everyNum = [34, 54, 27, 46];
+
+everyFalse = everyNum.every(element => element > 50);
+everyTrue = everyNum.every(element => element < 65);
+
+console.log(everyFalse); // false
+console.log(everyTrue); // true
+
+
+// Includes metodu
+
+const includes = [23, 45, 34, 3, 65];
+
+console.log(includes.includes(45)); // true
+
+console.log(includes.includes(4)); // false
+
+// axtarış massivin 2-ci indexindən(34) başladığı üçün true qaytarılacaq
+console.log(includes.includes(3, 2));
+
+// axtarış massivin 4-ci indexindən(65) başladığı üçün false qaytarılacaq
+console.log(includes.includes(3, 4));
+
+
+// Array.form metodu
+
+let newArray = Array.from("Hello World");
+console.log(newArray);
+
+
+// Contact metodu
+
+const contact1 = [23, 15, 45, 55]
+const contact2 = ["a", "b", "c", "d"]
+
+const contactArray = contact1.concat(contact2)
+console.log(contactArray) // [23, 15, 45, 55, 'a', 'b', 'c', 'd']
