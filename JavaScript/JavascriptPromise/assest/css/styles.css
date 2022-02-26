@@ -2,7 +2,8 @@
   width: 150px;
   height: 150px;
   border: 1px solid #000;
-  transition: all 0.5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
 }
 
 .box.bigger {
@@ -15,7 +16,8 @@
 }
 
 .box.move {
-  transform: translateX(300px);
+  -webkit-transform: translateX(300px);
+          transform: translateX(300px);
 }
 
 .box.colored {

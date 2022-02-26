@@ -1,0 +1,48 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.css-col.type-4 {
+    position: relative;
+    overflow: hidden;
+    margin: 40px 0;
+    padding: 10px
+}
+
+.css-col.type-4:after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: "";
+    transition: all .4s ease;
+    transform: translateX(100%);
+    background: #e12573;
+}
+
+.css-col.type-4:hover:after {
+    transform: translateX(0);
+}
+
+.css-col.type-4:hover .fa,
+.css-col.type-4:hover h2,
+.css-col.type-4:hover p {
+    color: #fff
+}
+
+.fa {
+    margin-right: 40px;
+    text-align: right;
+    color: #e12573
+}
+
+.css-col.type-4 .btn {
+    margin: 10px 0 20px;
+    padding: 12px 35px;
+    color: #fff;
+    border-radius: 40px;
+    background: #ff378a;
+}
