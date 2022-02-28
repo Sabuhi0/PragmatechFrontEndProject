@@ -16,8 +16,8 @@
 }
 
 .box.move {
-  -webkit-transform: translateX(300px);
-          transform: translateX(300px);
+  -webkit-transform: translateX(400px);
+          transform: translateX(400px);
 }
 
 .box.colored {

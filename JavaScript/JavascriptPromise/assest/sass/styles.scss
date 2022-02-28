@@ -2,16 +2,19 @@
 //     margin: 0;
 //     padding: 0;
 // }
+$box-w-h: 150px;
+$boxBigger-w-h:300px;
+$translateX:400px;
 .box {
-    width: 150px;
-    height: 150px;
+    width: $box-w-h;
+    height: $box-w-h;
     border: 1px solid #000;
     transition: all .5s;
 }
 
 .box.bigger {
-    width: 300px;
-    height: 300px;
+    width: $boxBigger-w-h;
+    height: $boxBigger-w-h;
 }
 
 .box.circle {
@@ -19,7 +22,7 @@
 }
 
 .box.move {
-    transform: translateX(300px);
+    transform: translateX($translateX);
 }
 
 .box.colored {
