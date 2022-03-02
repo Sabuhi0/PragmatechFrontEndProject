@@ -68,8 +68,8 @@
 // const [react, ...framework] = javascript
 // console.log(framework)
 
-// const { frontEnd: { javascript: [frmwork, frmwork2] } } = lang
-// console.log(frmwork)
+// const { frontEnd: { javascript: [framework, framework2] } } = lang
+// console.log(framework)
 
 /* For istifadəsi */
 
