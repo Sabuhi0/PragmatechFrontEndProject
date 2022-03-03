@@ -4,8 +4,8 @@
 // const [name, surname] = user
 
 
-// console.log(name, user[0]);
-// console.log(surname, user[1]);
+// console.log(name, user[0]); // Sabuhi Sabuhi
+// console.log(surname, user[1]); // Gasimov Gasimov
 
 /* Opject-də istifadəsi */
 
@@ -17,9 +17,9 @@
 
 // const { name, sur_name: surname, Age: age } = user
 
-// console.log(name)
-// console.log(surname)
-// console.log(age)
+// console.log(name) // Sabuhi
+// console.log(surname) // Gasimov
+// console.log(age) // 17
 
 /* Function-da istifadəsi */
 
@@ -35,7 +35,7 @@
 // })
 
 // function user({ surname }) {
-//     console.log(surname)
+//     console.log(surname) // Gasimov
 // }
 
 // user({
@@ -46,8 +46,8 @@
 
 // Array
 // function user([num1, num2]) {
-//     console.log(num1)
-//     console.log(num2)
+//     console.log(num1) // 2
+//     console.log(num2) // 5
 // }
 
 // user([2, 5])
@@ -62,16 +62,16 @@
 // }
 
 // const { frontEnd: { javascript: [react, ...framework] } } = lang
-// console.log(framework)
+// console.log(framework) // "NodeJs", "Angular"
 
 // const { frontEnd: { javascript } } = lang
 // const [react, ...framework] = javascript
-// console.log(framework)
+// console.log(framework) // "NodeJs", "Angular"
 
 // const { frontEnd: { javascript: [framework, framework2] } } = lang
-// console.log(framework)
+// console.log(framework) // React
 
-/* For istifadəsi */
+/* For-da istifadəsi */
 
 // const user = {
 //     name: "Sabuhi",
@@ -80,10 +80,10 @@
 // }
 
 // for (let [key, value] of Object.entries(user)) {
-//     console.log(key, value)
+//     console.log(key + ": " + value) // name: Sabuhi sur_name: Gasimov Age: 17
 // }
 
 /* Fetch Api ile istifadəsi */
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-    .then(response => response.json())
-    .then(({ title }) => console.log(title))
+// fetch('https://jsonplaceholder.typicode.com/todos/1')
+//     .then(response => response.json())
+//     .then(({ title }) => console.log(title))
