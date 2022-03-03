@@ -2,6 +2,7 @@
 
 // Filter metodu
 
+// Array
 const filterNumber = [30, 25, 22, 18, 45, 60, 70];
 
 const filteredNumber = filterNumber.filter(age => {
@@ -22,6 +23,7 @@ console.log(filteredArray) // [ 'React', 'Sass' ]
 
 /* ========================================= */
 
+// Obyekt 
 const data = [
     { name: "Apple", price: 2500 },
     { name: "Samsung", price: 2000 },

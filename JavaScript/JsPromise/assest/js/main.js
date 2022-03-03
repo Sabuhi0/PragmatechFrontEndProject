@@ -66,6 +66,7 @@ function wait(ms) {
 }
 */
 /*  
+// Arrow function ilə
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 wait(500)
@@ -123,7 +124,7 @@ wait(500)
 
 
 
-// Promise nece ishdiyir
+// Promise nece ishdiyir parm-a resolve,reject yazandaa ne bash verir, tam olarag Promise kimi ishdemesede :))
 /*
 class Sabuhi {
     resolved = []
@@ -157,7 +158,7 @@ new Sabuhi((resolve, reject) => {
 
 
 /* 
-    - Promise.all() -> hamisi resolve olarsa
+    - Promise.all() -> hamisi resolve olarsa yeni əməliyyat başa çatmış və uğurlu olarsa
     - Promise.race() -> birinci biten (resolve ve ya reject)
     - Promise.allSettled() -> hamisi tamamlandiginda
     - Promise.any() -> birinci resolve olan
