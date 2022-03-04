@@ -11,10 +11,12 @@ function App() {
         <User
           name = "Sabuhi"
           webPrograming = "FrontEnd Developers"
+          salary = "800$"
         />
         <User
           name = "Rahman"
           webPrograming = "BackEnd Developers"
+          salary = "900$"
         />
       </div>
     </div>
