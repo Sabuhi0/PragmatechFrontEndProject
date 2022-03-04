@@ -16,10 +16,11 @@ function Navbar() {
 */
 
 // With arrow function
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <div>
-        <ul className='d-flex'>
+        <h3>{props.title}</h3>
+        <ul className='d-flex'> 
         <li><a href="#">Home</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>

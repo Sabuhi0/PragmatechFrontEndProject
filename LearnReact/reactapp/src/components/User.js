@@ -2,12 +2,15 @@ import React, { Component } from 'react'
 
 class User extends Component {
   render() {
+    // Destructiong
+    const {name,webPrograming,salary} = this.props
     return (
       <div>
-        <form>
-        <input type="text"/>
-        <button>Send</button>
-        </form>
+        <ul>
+            <li>Name : {name}</li>
+            <li>Web Programing : {webPrograming}</li>
+            <li>Salary : {salary}</li>
+        </ul>
       </div>
     )
   }
