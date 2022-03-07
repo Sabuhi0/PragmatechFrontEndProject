@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import SingleComment from './SingleComment';
-import profile1 from './images/pic-1.jpeg'
-import profile2 from './images/pic-2.jpeg'
-import profile3 from './images/pic-3.jpeg'
+import profile1 from './images/pic-1.jpeg';
+import profile2 from './images/pic-2.jpeg';
+import profile3 from './images/pic-3.jpeg';
 
 const App = () => {
     return(
