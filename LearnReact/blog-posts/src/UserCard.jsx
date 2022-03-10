@@ -1,6 +1,7 @@
 import React from "react";
 
-const UserCard = () => {
+const UserCard = (props) => {
+    // console.log(props.children)
     return (
         <div className="ui card">
             <div className="content">
@@ -8,7 +9,7 @@ const UserCard = () => {
                     Alex Tancredi
                 </div>
                 <div className="description">
-                    Hello my name is Alex, I live Baku
+                    {props.children}
                 </div>
             </div>
             <div className="ui bottom button">

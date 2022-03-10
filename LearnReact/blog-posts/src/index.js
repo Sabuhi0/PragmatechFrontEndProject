@@ -9,24 +9,30 @@ import UserCard from './UserCard';
 const App = () => {
     return(
         <div className='ui comments'>
-            <SingleComment 
-                name= 'Ravi' 
-                date= 'Today at 5:00' 
-                text= 'it is amazing'
-                image= {profile2}
-            />
-            <SingleComment 
-                name= 'Yusif' 
-                date='Today at 6:00' 
-                text= 'Great Jop'
-                image= {profile3}
-            />
-            <SingleComment 
-                name= 'Huseyn' 
-                date='Today at 7:00' 
-                text= 'Thanks...'
-                image= {profile1}
-            />
+            <UserCard>
+                <SingleComment 
+                    name= 'Ravi' 
+                    date= 'Today at 5:00' 
+                    text= 'it is amazing'
+                    image= {profile2}
+                />
+            </UserCard>
+            <UserCard>
+                <SingleComment 
+                    name= 'Yusif' 
+                    date='Today at 6:00' 
+                    text= 'Great Jop'
+                    image= {profile3}
+                />
+            </UserCard>
+            <UserCard>
+                <SingleComment 
+                    name= 'Huseyn' 
+                    date='Today at 7:00' 
+                    text= 'Thanks...'
+                    image= {profile1}
+                />
+            </UserCard>
         </div>
     )
 }
