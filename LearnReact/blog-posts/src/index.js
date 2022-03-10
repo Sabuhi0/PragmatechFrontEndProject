@@ -31,6 +31,5 @@ const App = () => {
 }
 
 ReactDom.render(
-    <App/>,
-    document.querySelector("#root")
+    <App/>,document.querySelector("#root")
 )
