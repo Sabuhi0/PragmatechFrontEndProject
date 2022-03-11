@@ -4,6 +4,7 @@ import SingleComment from './SingleComment';
 import profile1 from './images/pic-1.jpeg';
 import profile2 from './images/pic-2.jpeg';
 import profile3 from './images/pic-3.jpeg';
+import UserCard from './UserCard';
 
 const App = () => {
     return(
