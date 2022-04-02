@@ -6,9 +6,9 @@ const Navbar = () => {
     <nav className='ui raised very padded segment'>
       <a className='ui teal inverted segment'>Gloria</a>
       <div className='ui right floated header'>
-        <button className='ui button'><NavLink to="/">Home</NavLink></button>
-        <button className='ui button'><NavLink to="/about">About</NavLink></button>
-        <button className='ui button'><NavLink to="/contact">Contact</NavLink></button>
+        <button className='ui button'><Link to="/">Home</Link></button>
+        <button className='ui button'><Link to="/about">About</Link></button>
+        <button className='ui button'><Link to="/contact">Contact</Link></button>
       </div>
     </nav>
   )
