@@ -1,5 +1,4 @@
 import React from 'react'
-// Test commit
 const About = () => {
   return (
     <div>
