@@ -1,17 +1,34 @@
 import React from 'react'
-import Modal from './Modal';
+// import Modal from './Modal';
+import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
-const Contact = () => {
+const Contact = ({ cards }) => {
+  console.log(cards)
   return (
     <div>
-      <Modal />
-      <div className='ui raised very padded text container segment' style={{marginTop: '80px'}}>
-        <h3 className='ui header'>Contact</h3>
-        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
-      </div>
+      {/* <Modal /> */}
+      {
+        cards.map((card) => {
+          return(
+            <div key={card.id} className='ui raised very padded text container segment' style={{marginTop: '80px'}}>
+              <Link to={""} className='ui header'>{card.title}</Link>
+              <p>{card.body}</p>
+            </div>
+          )
+        })
+      }
     </div>
   )
 }
+
+const mapStateToProps = (state) => {
+  const {cards} = state;
+  return {
+    // cards:cards
+    cards
+  }
+}
   
-export default Contact;
+export default connect(mapStateToProps)(Contact);
   
