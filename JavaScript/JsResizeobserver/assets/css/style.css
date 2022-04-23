@@ -9,3 +9,7 @@
     font-family: Arial, sans-serif;
 }
 
+textarea {
+    background: #333;
+    color: #fff;
+}
