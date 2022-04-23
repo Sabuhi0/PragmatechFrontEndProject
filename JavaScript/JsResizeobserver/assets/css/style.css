@@ -1,0 +1,11 @@
+/* Reset Css */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
