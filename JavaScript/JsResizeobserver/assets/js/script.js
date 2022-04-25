@@ -62,3 +62,28 @@ const genres = [
     }
     
 ]
+
+
+const observe = new ResizeObserver(([entry]) => {
+    const visibles = Math.floor((entry.contentRect.width - 130) / 130)
+    let html = '';
+    if(visibles) {
+        html += genres.slice(0, visibles - 1).reduce((prev, current) => {
+            return prev += `<a href='/'>${current.title}</a>`
+        }, '')
+    }
+    const invisibles = genres.slice(visibles > 0 ? visibles -1: 0)
+    if (invisibles.length > 0) {
+        html += `<div class="dropdown">`
+            html += `<button>Turler</button>`
+            html += `<nav>`
+                html += invisibles.reduce((prev, current) => {
+                    return prev += `<a href='/'>${current.title}</a>`
+                }, '')
+            html += `</nav>`
+        html += `</div>`
+    }
+    document.querySelector('.menu').innerHTML = html;
+})
+
+observe.observe(document.querySelector('.menu'))
