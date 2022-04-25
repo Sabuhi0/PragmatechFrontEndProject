@@ -30,3 +30,35 @@ const resizeObserver = new ResizeObserver(([entry]) => {
 })
 
 resizeObserver.observe(document.querySelector(".boxes"))
+
+
+const genres = [
+    {
+        title: 'Aile'
+    },
+    {
+        title: 'Fantastik'
+    },
+    {
+        title: 'Komedi'
+    },
+    {
+        title: 'Korku'
+    },
+    {
+        title: 'Gerilim'
+    },
+    {
+        title: 'Aksiyon'
+    },
+    {
+        title: 'Macera'
+    },
+    {
+        title: 'Biyografi'
+    },
+    {
+        title: 'Belgesel'
+    }
+    
+]
