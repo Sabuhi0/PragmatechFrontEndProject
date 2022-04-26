@@ -75,7 +75,7 @@ const observe = new ResizeObserver(([entry]) => {
     const invisibles = genres.slice(visibles > 0 ? visibles -1: 0)
     if (invisibles.length > 0) {
         html += `<div class="dropdown">`
-            html += `<button>Turler</button>`
+            html += `<button>Turler</button>` 
             html += `<nav>`
                 html += invisibles.reduce((prev, current) => {
                     return prev += `<a href='/'>${current.title}</a>`
@@ -86,6 +86,4 @@ const observe = new ResizeObserver(([entry]) => {
     document.querySelector('.menu').innerHTML = html;
 })
 
-observe.observe(document.querySelector('.menu'))
-
-console.log()
+observe.observe(document.querySelector('.menu'));
