@@ -17,7 +17,7 @@ const resizeObserver = new ResizeObserver(([entry]) => {
     const visibles = Math.floor(entry.contentRect.width / 200);
     
     entry.target.querySelectorAll(".box").forEach((box, index) => {
-        if( (index + 1) <= visibles) {
+        if((index + 1) <= visibles) {
             // goster
             box.style.display = 'flex'
         }
