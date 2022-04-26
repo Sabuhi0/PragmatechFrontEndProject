@@ -87,3 +87,5 @@ const observe = new ResizeObserver(([entry]) => {
 })
 
 observe.observe(document.querySelector('.menu'))
+
+console.log()
