@@ -6,8 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Intersection Observer</title>
 </head>
+
+<style>
+    #box {
+        width: 400px;
+        height: 400px;
+        background: #333;
+    }
+</style>
 <body>
-    
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <p>
+        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sagittis tincidunt neque, eget rhoncus arcu ornare in. Donec ullamcorper orci et pharetra mattis. Cras eu sollicitudin odio, non ornare lacus. Vivamus efficitur massa est, id dictum diam tincidunt id. Ut quis diam dolor. Fusce maximus magna odio. Cras venenatis dui eget blandit varius. Cras ac massa tempus, egestas ligula at, lobortis est. Etiam a consequat sem, at efficitur nulla. Ut pharetra mauris vitae vehicula cursus. Nam vel ultrices tortor. Nulla molestie quis neque elementum rutrum.
+
+        Vivamus hendrerit, velit at bibendum finibus, est orci tincidunt ante, sit amet placerat nibh leo lacinia lacus. Etiam dictum nulla vitae lectus ultrices, sed dapibus elit varius. Maecenas magna magna, suscipit id mi varius, tincidunt tincidunt metus. Nullam eu odio dolor. Donec iaculis, tortor vel fermentum viverra, nunc mauris porttitor urna, ac aliquet arcu risus ac magna. Nullam tortor nisl, vulputate in viverra eget, blandit placerat orci. Quisque fringilla bibendum aliquam.
+
+        Vestibulum facilisis pharetra semper. Aliquam eu tempus erat. Sed convallis ac lacus in condimentum. Quisque non ligula quis lacus tincidunt euismod. Suspendisse at maximus risus, vel sagittis risus. Vivamus sit amet enim vel lacus semper varius. Ut auctor a lacus eu pretium. Nullam at magna a nibh commodo euismod. Duis quis ultrices lorem. Ut aliquam imperdiet arcu vel interdum. Nunc vestibulum tempor tortor, eu ullamcorper dui pellentesque sed. Curabitur sit amet ornare ante. Pellentesque imperdiet, lectus sed venenatis tempor, lorem justo dapibus metus, eget maximus nunc sem non purus. Pellentesque nibh enim, dapibus ut dictum id, ultricies non dolor. Aliquam neque sapien, euismod ut mauris non, posuere pellentesque risus. Praesent ut dolor ut nisi tristique maximus quis sollicitudin ante.
+    </p>
+    <p>
+        Donec fringilla, velit at euismod suscipit, diam lacus ornare lorem, eu consectetur nisl leo sit amet nulla. Duis nec condimentum orci. Phasellus condimentum turpis venenatis euismod rutrum. Duis sit amet volutpat eros. Ut at semper mi, non ornare augue. Integer pellentesque augue ex, at egestas neque fringilla a. Suspendisse diam dui, rutrum eu tincidunt vitae, congue eget odio. Integer quam leo, euismod sed velit et, auctor hendrerit dolor.
+
+        Fusce rhoncus, tortor at cursus pellentesque, quam sem pretium nulla, quis viverra arcu justo ac risus. Fusce venenatis vestibulum massa sit amet pharetra. In quis vulputate elit. Sed rhoncus sodales lectus eget feugiat. Vestibulum aliquet placerat nulla vel interdum. Nullam a sodales dui. Morbi facilisis augue nunc, ac vehicula ligula dictum non. Vestibulum iaculis viverra elit, ut luctus nunc lobortis sit amet. Sed pharetra mauris at condimentum mattis. Donec viverra mauris eu mi dictum, ac vestibulum lorem tristique.
+
+        Vivamus faucibus interdum facilisis. Nulla facilisi. Nam non nunc elementum, convallis eros nec, ultricies elit. Fusce ut volutpat felis. Pellentesque sodales convallis pretium. Ut luctus nisl metus, sed vestibulum tellus accumsan et. Aliquam semper nibh a felis feugiat laoreet. Fusce justo arcu, laoreet ut rhoncus quis, euismod nec libero. In massa dui, tincidunt et lectus non, tristique consequat elit. Vestibulum bibendum in eros non ornare. Maecenas maximus ligula eu arcu ultricies, ac dignissim tortor vulputate.
+    </p>
+    <div id="box"></div>
+    <p>
+        Donec fringilla, velit at euismod suscipit, diam lacus ornare lorem, eu consectetur nisl leo sit amet nulla. Duis nec condimentum orci. Phasellus condimentum turpis venenatis euismod rutrum. Duis sit amet volutpat eros. Ut at semper mi, non ornare augue. Integer pellentesque augue ex, at egestas neque fringilla a. Suspendisse diam dui, rutrum eu tincidunt vitae, congue eget odio. Integer quam leo, euismod sed velit et, auctor hendrerit dolor.
+
+        Fusce rhoncus, tortor at cursus pellentesque, quam sem pretium nulla, quis viverra arcu justo ac risus. Fusce venenatis vestibulum massa sit amet pharetra. In quis vulputate elit. Sed rhoncus sodales lectus eget feugiat. Vestibulum aliquet placerat nulla vel interdum. Nullam a sodales dui. Morbi facilisis augue nunc, ac vehicula ligula dictum non. Vestibulum iaculis viverra elit, ut luctus nunc lobortis sit amet. Sed pharetra mauris at condimentum mattis. Donec viverra mauris eu mi dictum, ac vestibulum lorem tristique.
+
+        Vivamus faucibus interdum facilisis. Nulla facilisi. Nam non nunc elementum, convallis eros nec, ultricies elit. Fusce ut volutpat felis. Pellentesque sodales convallis pretium. Ut luctus nisl metus, sed vestibulum tellus accumsan et. Aliquam semper nibh a felis feugiat laoreet. Fusce justo arcu, laoreet ut rhoncus quis, euismod nec libero. In massa dui, tincidunt et lectus non, tristique consequat elit. Vestibulum bibendum in eros non ornare. Maecenas maximus ligula eu arcu ultricies, ac dignissim tortor vulputate.
+    </p>
+    <p>
+        Donec fringilla, velit at euismod suscipit, diam lacus ornare lorem, eu consectetur nisl leo sit amet nulla. Duis nec condimentum orci. Phasellus condimentum turpis venenatis euismod rutrum. Duis sit amet volutpat eros. Ut at semper mi, non ornare augue. Integer pellentesque augue ex, at egestas neque fringilla a. Suspendisse diam dui, rutrum eu tincidunt vitae, congue eget odio. Integer quam leo, euismod sed velit et, auctor hendrerit dolor.
+
+        Fusce rhoncus, tortor at cursus pellentesque, quam sem pretium nulla, quis viverra arcu justo ac risus. Fusce venenatis vestibulum massa sit amet pharetra. In quis vulputate elit. Sed rhoncus sodales lectus eget feugiat. Vestibulum aliquet placerat nulla vel interdum. Nullam a sodales dui. Morbi facilisis augue nunc, ac vehicula ligula dictum non. Vestibulum iaculis viverra elit, ut luctus nunc lobortis sit amet. Sed pharetra mauris at condimentum mattis. Donec viverra mauris eu mi dictum, ac vestibulum lorem tristique.
+
+        Vivamus faucibus interdum facilisis. Nulla facilisi. Nam non nunc elementum, convallis eros nec, ultricies elit. Fusce ut volutpat felis. Pellentesque sodales convallis pretium. Ut luctus nisl metus, sed vestibulum tellus accumsan et. Aliquam semper nibh a felis feugiat laoreet. Fusce justo arcu, laoreet ut rhoncus quis, euismod nec libero. In massa dui, tincidunt et lectus non, tristique consequat elit. Vestibulum bibendum in eros non ornare. Maecenas maximus ligula eu arcu ultricies, ac dignissim tortor vulputate.
+    </p>
     <!-- Js -->
     <script src="./assets/js/app.js"></script>
 </body>
