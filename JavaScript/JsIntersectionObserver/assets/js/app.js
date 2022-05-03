@@ -1,5 +1,3 @@
-// console.log("Hello World!")
-
 const target = document.getElementById("image");
 
 const callback = (entries) => {
