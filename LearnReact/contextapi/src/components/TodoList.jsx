@@ -9,7 +9,7 @@ class TodoList extends React.Component {
         return (
             <div style={{background: theme.background, color: theme.text, height: '120px', textAlign: 'center'}}>
                 <p className='item'>Plan the family</p>
-                <p className='item'>Go for shopping for dinner</p>
+                <p className='item'>Go shopping for dinner</p>
                 <p className='item'>Go for a walk</p>
                 <button className='ui button primary' onClick={changeTheme} style={{marginTop:'8px'}}>Change the theme</button>
             </div>
