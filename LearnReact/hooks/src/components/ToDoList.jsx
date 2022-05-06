@@ -1,13 +1,43 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ToDoList = () => {
+    const [todos, setTodos] = useState([
+        {   
+            id: 1,
+            text:'Pay bills'
+        },
+        {   
+            id: 2,
+            text:'Do your homework'
+        },
+        {   
+            id: 3,
+            text:'Feed the cat'
+        }
+    ])
+
+    const addTodo = () => {
+        setTodos([
+            ...todos,
+            {
+                id: Math.random(),
+                text: 'Learn hooks' 
+            }
+        ]);
+    };
+
     return(
         <div>
             <ul>
-                <li>Pay bills</li>
-                <li>Do your homework</li>
-                <li>Feed the dog</li>
+                {
+                    todos.map(todo => {
+                        return(
+                            <li key={todo.id}>{todo.text}</li>
+                        )
+                    })
+                }
             </ul>
+            <button onClick={addTodo}>Add a todo</button>
         </div>
     )
 }
