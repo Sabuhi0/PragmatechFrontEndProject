@@ -18,12 +18,12 @@ const ToDoList = () => {
         }
     ])
 
-    const addTodo = () => {
+    const addTodo = (text) => {
         setTodos([
             ...todos,
             {
                 id: Math.random(),
-                text: 'Learn hooks' 
+                text
             }
         ]);
     };
@@ -39,7 +39,7 @@ const ToDoList = () => {
                     })
                 }
             </ul>
-            <button onClick={addTodo}>Add a todo</button>
+            <AddNewTodo addTodo={addTodo}/>
         </div>
     )
 }
