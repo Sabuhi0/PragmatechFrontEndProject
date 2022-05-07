@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AddNewTodo from "./AddNewTodo";
 
 
@@ -18,6 +18,8 @@ const ToDoList = () => {
         }
     ])
 
+    const [count, setCount] = useState(0);
+
     const addTodo = (text) => {
         setTodos([
             ...todos,
@@ -27,6 +29,14 @@ const ToDoList = () => {
             }
         ]);
     };
+
+    useEffect(() => {
+        console.log("useEffect todos", todos)
+    }, [todos]) 
+
+    useEffect(() => {
+        console.log("useEffect count", count)
+    }, [count])
 
     return(
         <div>
@@ -40,6 +50,7 @@ const ToDoList = () => {
                 }
             </ul>
             <AddNewTodo addTodo={addTodo}/>
+            <button onClick={() => setCount(count + 1)}>Count: {count}</button>
         </div>
     )
 }
