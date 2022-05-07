@@ -11,7 +11,7 @@ const AddNewTodo = ({addTodo}) => {
     return(
         <form onSubmit={onFormSubmit}>
             <label htmlFor="todo"></label>
-            <input type="text" id="todo" value={todo} onChange={(e) => setTodo(e.target.value)} />
+            <input type="text" id="todo" value={todo} onChange={(e) => setTodo(e.target.value)} required/>
             <input type="submit" />
         </form>
     );
