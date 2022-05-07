@@ -10,7 +10,7 @@ function App() {
       <div className="ui raised very padded text container segment">
         <ThemeContextProvider>
           <AuthContextProvider>
-            <TodoListContextProvider>
+            <TodoListContextProvider> 
               <Navbar/>
               <TodoList/>
             </TodoListContextProvider>
