@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const AddNewTodo = ({addTodo}) => {
-    const [todo, setTodo] =  useState('')
+    const [todo, setTodo] =  useState('');
 
     const onFormSubmit = (e) => {
         e.preventDefault();
