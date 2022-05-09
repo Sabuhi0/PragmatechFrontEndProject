@@ -12,7 +12,7 @@ const TodoListContextProvider = ({ children }) => {
                 id: Math.random(),
                 text: todo
             }
-        ])
+        ]);
     };
 
     const removeTodo = (id) => {
