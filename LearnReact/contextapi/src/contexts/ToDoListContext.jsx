@@ -1,27 +1,32 @@
-import React, {createContext, useState} from 'react';
+import React, {createContext, useReducer } from 'react';
 
 export const TodoListContext = createContext();
 
-const TodoListContextProvider = ({ children }) => {
-    const [todos, setTodos] = useState([]);
+const todosReducer = (state,action) => {
+    // eslint-disable-next-line default-case
+    switch(action.type) {
+        case 'ADD_TODO':
+            return [
+                ...state,
+                { text:action.text, id:Math.random() }
+            ];
+        case 'REMOVE_TODO':
+            return state.filter(todo => todo.id !== Number(action.id));
 
-    const addTodo = (todo) => {
-        setTodos([
-            ...todos,
-            {
-                id: Math.random(),
-                text: todo
-            }
-        ]);
-    };
-
-    const removeTodo = (id) => {
-        setTodos(todos.filter(todo => {
-            return todo.id !== Number(id)
-        }));
+        default:
+            return state;
     }
+}
+
+const TodoListContextProvider = ({ children }) => {
+    const [todos, dispatch] = useReducer(todosReducer, [
+        {text: 'Plan the family', id:1},
+        {text: 'Go shopping for dinner', id:2},
+        {text: 'Go for a walk', id:3}
+    ]);
+
     return(
-        <TodoListContext.Provider value={{ todos, addTodo, removeTodo }}>
+        <TodoListContext.Provider value={{ todos, dispatch }}>
             { children }
         </TodoListContext.Provider>
     )
