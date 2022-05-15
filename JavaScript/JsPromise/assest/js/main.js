@@ -65,7 +65,7 @@ function wait(ms) {
     })
 }
 */
-/*  
+
 // Arrow function ilə
 const wait = ms => new Promise(resolve => setTimeout(resolve, ms));
 
@@ -120,7 +120,7 @@ wait(500)
 })
 
 .finally(() => console.log("Animasyon bitdi!"))
-*/
+
 
 
 
