@@ -17,16 +17,18 @@
         align-items: center;
         padding: 15px 20px;
         border-radius: 8px;
-        background-color: #38d5a6dc;
+        background-color: #212529;
         margin-top: 32px;
         .todo_title {
-            font-size: 2.5rem;
+            color: #fff;
+            font-size: 1.5rem;
         }
         .todo_div {
             display: flex;
             margin-top: 16px;
             .todo_input {
-                padding: 6px 8px;
+                width: 100%;
+                padding: 10px 12px;
                 font-size: 0.9rem;
                 border-radius: 4px 0 0 4px;
                 border: none;
@@ -50,17 +52,17 @@
     }
     .todo_container {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         padding: 15px 20px;
         border-radius: 8px;
         margin-top: 16px;
-        background-color: #38d5a6dc;
+        background-color: #343A40;
         .todo {
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 8px 0;
-            border-bottom: 1px solid rgb(228, 203, 171);
+            border-bottom: 1px solid #101417;
         }
         .todo:last-child { 
             border: none;
@@ -69,6 +71,17 @@
             position: relative;
             display: flex;
             align-items: center;
+            color: #fff;
+            .todo_editInput {
+                position: absolute;
+                padding: 6px 8px;
+                font-size: 0.9rem;
+                border-radius: 4px 0 0 4px;
+                border: none;
+                outline: none;
+                opacity: 0;
+                pointer-events: none;
+            }
         }
         .todo_text, .todo_edit {
             margin-left: 8px;
@@ -108,10 +121,35 @@
              
             .todo_edit:hover {
                 background-color: rgb(53, 192, 99);
-             }
-
+            }
+            .todo_save {
+                position: absolute;
+                right: 0;
+                background-color: rgb(61, 164, 224);
+                padding: 6px 8px;
+                font-size: 0.9rem;
+                color: white;
+                border-radius: 4px 4px;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                transition: 0.3s ease all;
+                opacity: 0;
+                pointer-events: none;
+            }
+            .todo_save:hover {
+                background-color: rgb(65, 147, 194);
+            }
         }
-
+        .todo.-edited .todo_title *, .todo.-edited .todo_buttons * {
+            opacity: 0;
+            pointer-events: none;
+        }
+         
+         .todo.-edited .todo_title .todo_editInput, .todo.-edited .todo_buttons .todo_save {
+            opacity: 1;
+            pointer-events: all;
+        }
     }
 
 }
