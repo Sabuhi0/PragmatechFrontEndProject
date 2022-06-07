@@ -1,4 +1,4 @@
-let a : string;
-a = 'Hello World!';
+let a : number;
+a = 5;
 
 console.log(a);
