@@ -1,15 +1,40 @@
+import React from "react";
 
-const formatName = ( [name, lastName, age] ) => {
-  return name + ' ' + lastName + " " + age;
-}
-
-const user = ['Sabuhi', "Gasimov", 17]
-
-function App() {
+const App = () => {
   return (
-      <div className="App text-center text-red-600 text-[30px]">
-        <h1>Salam, {formatName(user)}</h1>
+    <div className="max-w-sm rounded overflow-hidden shadow-lg">
+      <img className="w-full" src="https://source.unsplash.com/random" alt="" />
+      <div className="px-6 py-4">
+        <div className="font-bold text-purple-500 text-xl mb-2">
+          Photo by John Doe
+        </div>
+        <ul>
+          <li>
+            <strong>Views: </strong>
+            4000
+          </li>
+          <li>
+            <strong>Like: </strong>
+            250
+          </li>
+          <li>
+            <strong>Downloads: </strong>
+            300
+          </li>
+        </ul>
       </div>
+      <div className="px-6 py-4">
+        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+          #tag1
+        </span>
+        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+          #tag2
+        </span>
+        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2">
+          #tag3
+        </span>
+      </div>
+    </div>
   );
 }
 
