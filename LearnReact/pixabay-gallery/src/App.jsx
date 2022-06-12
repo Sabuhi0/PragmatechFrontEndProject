@@ -18,21 +18,24 @@ const App = () => {
   }, [term])
  
   return (
-    <div className="container mx-auto"> 
-      <ImageSearch searchText={(text) => setTerm(text)} />
+    <div className="bg-[#212529]">
+      <div className="container mx-auto"> 
+        <ImageSearch searchText={(text) => setTerm(text)} />
 
-      {!isLoading && images.length === 0 && <h1 className="text-5xl text-red-600 text-center mx-auto mt-32">No Images Found!</h1> }
+        {!isLoading && images.length === 0 && <h1 className="text-5xl text-red-600 text-center mx-auto mt-32">No Images Found!</h1> }
 
-      {isLoading ? <h1 className="text-6xl text-center mx-auto mt-32">Loading...</h1> : 
-        <div className="grid grid-cols-3 gap-4"> 
-          {
-            images.map(image => (
-              <ImageCard key={image.id} image={image} />
-            ))
-          } 
-        </div>
-      }
+        {isLoading ? <h1 className="text-6xl text-center mx-auto mt-32 text-white">Loading...</h1> : 
+          <div className="grid grid-cols-3 gap-4"> 
+            {
+              images.map(image => (
+                <ImageCard key={image.id} image={image} />
+              ))
+            } 
+          </div>
+        }
+      </div>
     </div>
+    
   );
 }
 
