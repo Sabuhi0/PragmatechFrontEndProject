@@ -6,9 +6,6 @@ const App = () =>  {
       <h1 className="text-center text-xl">
         <Header name= 'Sabuhi' age={17} country="Azerbaijan"/>
       </h1>
-      <main>
-        
-      </main>
     </div>
   )
 }
