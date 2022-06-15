@@ -1,7 +1,15 @@
+import Header from "./components/Header";
 
 const App = () =>  {
   return (
-    <h1 className="text-red-500">App</h1>
+    <div className="container mx-auto">
+      <h1 className="text-center text-xl">
+        <Header name= 'Sabuhi' age={17} country="Azerbaijan"/>
+      </h1>
+      <main>
+        
+      </main>
+    </div>
   )
 }
 
