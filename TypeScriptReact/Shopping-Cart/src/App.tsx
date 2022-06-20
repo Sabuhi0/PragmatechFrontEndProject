@@ -1,12 +1,10 @@
-import './App.css'
-
-function App() {
+const App = () => {
 
   return (
-    <div className="App">
+    <div className="App text-8xl text-center text-red-600 ">
       App
     </div>
   )
 }
 
-export default App
+export default App;
