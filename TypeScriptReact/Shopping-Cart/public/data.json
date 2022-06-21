@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Iphone 8",
         "size":256,
-        "price": "363",
+        "price": 363,
         "image": "https://m.media-amazon.com/images/I/61v20wGgLOL._AC_SY679_.jpg",
         "color":"Red"
         
@@ -12,7 +12,7 @@
         "id": 2,
         "name": "Iphone 12 Pro",
         "size":128,
-        "price": "819",
+        "price": 819,
         "image": "https://m.media-amazon.com/images/I/712yl2wTDbL._AC_SX522_.jpg",
         "color":"Pacific Blue"
     },
@@ -20,8 +20,8 @@
         "id": 3,
         "name": "SAMSUNG Galaxy S22 Ultra",
         "size":512,
-        "price": "1,200.00",
-        "image": "hhttps://m.media-amazon.com/images/I/61U6oC65TTL._AC_SX466_.jpg",
+        "price": 1200,
+        "image": "https://m.media-amazon.com/images/I/61U6oC65TTL._AC_SX466_.jpg",
         "color":"Phantom Black"
     }
 ]
