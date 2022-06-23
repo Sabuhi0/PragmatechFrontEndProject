@@ -25,7 +25,7 @@ const App = () => {
     fetch('/public/data.json').then(data => data.json()).then(data => console.log(setData(data)))
   }, [])
   return (
-    <div className="grid grid-cols-[75%,25%] min-h-screen">
+    <div className="grid grid-cols-[75%,25%]">
       <CardContext.Provider value={{
         data,
         setData,
