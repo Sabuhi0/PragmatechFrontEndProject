@@ -1,6 +1,8 @@
 import React, { useContext } from 'react';
 import { CardContext } from '../../App';
 import { ShoppingData } from "../../types/data";
+import { MdOutlineAdd } from 'react-icons/md';
+import { IoMdRemoveCircle } from 'react-icons/io'
 
 
 const Items = ({ data }: {data: ShoppingData}) => {
@@ -9,12 +11,14 @@ const Items = ({ data }: {data: ShoppingData}) => {
     const click = (id: number) => {
         if(!card.some(s => s.id === id)) {
             setCard([...card, data])
+        } else {
+            setCard(card.filter(s => s.id !== id))
         }
     }
 
     return (
-        <div className='bg-gray-300 shadow-lg border rounded-md flex justify-between px-5'>
-        <div className='flex flex-col space-y-2 p-3'>
+        <div className='flex justify-between px-5 bg-gray-300 border rounded-md shadow-lg h-[250px]'>
+        <div className='flex flex-col p-3 space-y-2'>
             <img src={data.image} width={50} />
             <h1>{data.name}</h1>
             <h1>{data.size}GB</h1>
@@ -23,7 +27,7 @@ const Items = ({ data }: {data: ShoppingData}) => {
         </div>
         <div className=''>
             <button onClick={() => click(data.id)}>
-                Add to the card
+               { card.some(s => s.id === data.id) ? <IoMdRemoveCircle size={40} /> : <MdOutlineAdd size={40} /> }
             </button>
         </div>
         </div>
