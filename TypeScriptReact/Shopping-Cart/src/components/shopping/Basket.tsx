@@ -4,7 +4,6 @@ import { CardContext } from '../../App';
 
 const Basket = () => {
     const { card } = useContext(CardContext)
-
     return (
         <div className='min-h-screen bg-gray-500'>
             {
