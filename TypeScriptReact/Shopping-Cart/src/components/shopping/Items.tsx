@@ -25,7 +25,7 @@ const Items = ({ data }: {data: ShoppingData}) => {
             <h1>{data.price}$</h1>
             <h1>{data.color}</h1> 
         </div>
-        <div className=''>
+        <div>
             <button onClick={() => click(data.id)}>
                { card.some(s => s.id === data.id) ? <IoMdRemoveCircle size={40} /> : <MdOutlineAdd size={40} /> }
             </button>
