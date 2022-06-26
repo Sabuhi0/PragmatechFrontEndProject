@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { CardContext } from '../../App';
 import { ShoppingData } from "../../types/data";
 import { MdOutlineAdd } from 'react-icons/md';
@@ -7,7 +7,7 @@ import { IoMdRemoveCircle } from 'react-icons/io'
 
 const Items = ({ data }: {data: ShoppingData}) => {
     const { card, setCard } = useContext(CardContext)
-
+    
     const click = (id: number) => {
         if(!card.some(s => s.id === id)) {
             setCard([...card, data])
