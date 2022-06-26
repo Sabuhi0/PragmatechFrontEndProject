@@ -20,6 +20,9 @@ const Basket = () => {
                                 <li className='text-[25px]'>Color: <span className='text-[20px] font-bold'>{item.color}</span></li>
                                 <li className='text-[25px]'>Price: <span className='text-[20px] font-bold'>{item.price}$</span></li>
                             </ul>
+                            <div className=''>
+                                <h1>Total: <span>$</span></h1>
+                            </div>
                         </div>
                     </div>
                 </div>) : <h1 className='mt-2 text-5xl font-semibold text-center text-white'>The basket is empty</h1>
