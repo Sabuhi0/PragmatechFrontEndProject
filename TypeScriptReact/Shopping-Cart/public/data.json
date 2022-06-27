@@ -13,13 +13,13 @@
         "name": "Iphone 12 Pro",
         "size":128,
         "price": 819,
-        "image": "https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-12-pro-max-pacific-blue-back.png",
+        "image": "https://s.turkcell.com.tr/SiteAssets/Cihaz/cep-telefonu/apple/12-pro/cg/1.png",
         "color":"Pacific Blue"
     },
     {
         "id": 3,
         "name": "iPhone 13 Pro Max",
-        "size": 1,
+        "size": 528,
         "price": 1200,
         "image": "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/iphone-13-pro-max-blue-select?wid=940&hei=1112&fmt=png-alpha&.v=1645552346295",
         "color":"Sierra Blue"
