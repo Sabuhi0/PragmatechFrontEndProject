@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext } from "react";
 import { Icard, CardContext } from "../../App";
 import Items from "./Items";
 
