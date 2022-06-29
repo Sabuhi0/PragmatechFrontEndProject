@@ -1,6 +1,5 @@
 import { useContext, useEffect, useState } from "react";
 import { Icard, CardContext } from "../../App";
-import { ShoppingData } from "../../types/data";
 import Items from "./Items";
 
 const Card = () => {
