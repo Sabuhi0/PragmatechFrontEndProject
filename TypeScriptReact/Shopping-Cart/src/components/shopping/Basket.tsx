@@ -7,7 +7,7 @@ const Basket = () => {
         <div className='min-h-screen bg-gray-500'>
             {
                 card.length !== 0 ? card.map(item => 
-                <div className='p-2 m-2 bg-white rounded-md'>
+                <div key={item.id} className='p-2 m-2 bg-white rounded-md'>
                     <div className='flex flex-col items-center justify-start'>
                         <div className='text-start'>
                             <img className='w-[40%]' src={item.image} alt="" />
