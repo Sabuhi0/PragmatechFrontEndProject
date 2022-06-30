@@ -24,9 +24,7 @@ const Basket = () => {
                 </div>) : <h1 className='mt-2 text-5xl font-semibold text-center text-white'>The basket is empty</h1>
             }
             {
-                card.length !==0 ? card.map(item => <div className='flex justify-end pr-4 text-3xl'>
-                    <h1>Total: {item.price} <span>$</span></h1>
-                </div>) : null
+                card.length !== 0 ? card.reduce((a, c) => a + c.price, 0) : null
             }
         </div>
     )
