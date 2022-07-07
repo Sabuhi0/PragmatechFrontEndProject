@@ -24,7 +24,9 @@ const Basket = () => {
                 </div>) : <h1 className='mt-2 text-5xl font-semibold text-center text-white'>The basket is empty</h1>
             }
             {
-                card.length !== 0 ? card.reduce((a, c) => a + c.price, 0) : null
+                card.length !== 0 ? <h1 className='text-2xl flex justify-end p-4'>
+                    Total: <span className='font-semibold'>{card.reduce((a, c) => a + c.price, 0)}$</span>
+                </h1> : null
             }
         </div>
     )
