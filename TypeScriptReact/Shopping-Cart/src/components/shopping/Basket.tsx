@@ -10,7 +10,7 @@ const Basket = () => {
                 <div key={item.id} className='p-2 m-2 bg-white rounded-md'>
                     <div className='flex flex-col items-center justify-start'>
                         <div className='text-start'>
-                            <img className='w-[40%]' src={item.image} alt="" />
+                            <img className='w-full' src={item.image} alt="" />
                         </div>
                         <div className='flex flex-col justify-center w-full'>
                             <ul className='flex flex-col'>
